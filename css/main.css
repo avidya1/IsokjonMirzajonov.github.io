@@ -1,0 +1,666 @@
+* {
+  box-sizing: border-box; }
+
+html {
+  height: 100%; }
+
+body {
+  margin: 0;
+  padding: 0; }
+
+header {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; }
+  header .video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    pointer-events: none; }
+  header .navbar {
+    padding-left: 0; }
+    header .navbar .navbar-brand {
+      color: #d0d9bc; }
+    header .navbar .navbar-nav .nav-item a {
+      color: #d0d9bc;
+      padding: 0 35px;
+      font-weight: 400; }
+  header .wrapper {
+    margin: 130px 0 0 0;
+    display: inline-flex;
+    color: #d0d9bc; }
+    header .wrapper .static-txt {
+      font-size: 40px;
+      font-weight: 500; }
+    header .wrapper .dynamic-txt {
+      margin-left: -25px; }
+      header .wrapper .dynamic-txt a {
+        font-size: 40px;
+        font-weight: 500;
+        color: #d0d9bc; }
+  header .aboutMe {
+    color: #d0d9bc;
+    font-size: 22px;
+    text-align: justify; }
+    header .aboutMe a {
+      color: #d0d9bc !important; }
+    header .aboutMe .btn {
+      color: #d0d9bc;
+      background-color: rgba(208, 217, 188, 0.089); }
+  header .rasmPart img {
+    margin: 60px 0 0 0; }
+
+.contactME {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  height: 100vh; }
+  .contactME .video2 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100vh;
+    pointer-events: none; }
+  .contactME .rasmPart {
+    margin-top: 40px;
+    margin-bottom: 90px; }
+  .contactME .carusel {
+    margin-top: 160px;
+    text-align: center; }
+    .contactME .carusel h3 {
+      font-size: 40px;
+      font-weight: 400; }
+    .contactME .carusel i {
+      margin: 40px 0 0 0; }
+    .contactME .carusel .text1 i {
+      font-size: 255px;
+      background: #121FCF;
+      background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .contactME .carusel .text1 a {
+      background: #121FCF;
+      background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 40px;
+      font-weight: 700; }
+    .contactME .carusel .text3 i {
+      font-size: 255px;
+      color: #0cd17f; }
+    .contactME .carusel .text3 a {
+      color: #0cd17f;
+      font-size: 40px;
+      font-weight: 700; }
+    .contactME .carusel .text2 i {
+      font-size: 255px;
+      color: #121FCF; }
+    .contactME .carusel .text2 a {
+      color: #121FCF;
+      font-size: 40px;
+      font-weight: 700; }
+
+.projectSec {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  padding-bottom: 45px;
+  height: 100%; }
+  .projectSec h1 {
+    font-weight: bold;
+    z-index: 5; }
+  .projectSec .video1 {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    pointer-events: none; }
+  .projectSec .mainProject {
+    margin-top: 55px;
+    width: 100%;
+    height: 100%; }
+    .projectSec .mainProject .imgSec {
+      height: 270px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+      transition: 0.5s all linear; }
+      .projectSec .mainProject .imgSec img {
+        width: 100%;
+        height: 270px; }
+      .projectSec .mainProject .imgSec .textSec {
+        width: 100%;
+        height: 270px;
+        top: 0;
+        left: 0;
+        display: none;
+        position: absolute;
+        transition: 0.4s all linear; }
+      .projectSec .mainProject .imgSec:hover .textSec {
+        display: inline-block;
+        top: 0px;
+        transition: 0.4s all linear; }
+      .projectSec .mainProject .imgSec:hover {
+        transform: scale(1.1); }
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.589);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+  z-index: 1000; }
+  .sidenav video {
+    height: 80%; }
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
+
+.sidenav a:hover {
+  color: #f1f1f1; }
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+
+  .sidenav a {
+    font-size: 18px; } }
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    height: 100vh; }
+    header .video {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      pointer-events: none; }
+    header .navbar {
+      padding-left: 0; }
+      header .navbar .navbar-brand {
+        color: #d0d9bc; }
+      header .navbar .navbar-nav .nav-item a {
+        color: #d0d9bc;
+        padding: 0 35px;
+        font-weight: 400; }
+    header .wrapper {
+      display: inline-flex;
+      color: #d0d9bc; }
+      header .wrapper .static-txt {
+        font-size: 18px;
+        font-weight: 500; }
+      header .wrapper .dynamic-txt {
+        margin-left: -25px; }
+        header .wrapper .dynamic-txt a {
+          font-size: 18px;
+          font-weight: 500;
+          color: #d0d9bc; }
+    header .aboutMe {
+      color: #d0d9bc;
+      font-size: 16px;
+      text-align: justify; }
+      header .aboutMe a {
+        color: #d0d9bc !important; }
+      header .aboutMe .btn {
+        color: #d0d9bc;
+        background-color: rgba(208, 217, 188, 0.089); }
+    header .rasmPart {
+      display: none; }
+      header .rasmPart img {
+        width: 100%;
+        height: 100%;
+        margin: 0 0 80px 0; }
+
+  .projectSec {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    padding-bottom: 45px;
+    height: 100%; }
+    .projectSec h1 {
+      font-weight: bold;
+      z-index: 5; }
+    .projectSec .video1 {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      pointer-events: none; }
+    .projectSec .mainProject {
+      margin-top: 55px;
+      width: 100%;
+      height: 100%; }
+      .projectSec .mainProject .imgSec {
+        height: 270px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        transition: 0.5s all linear; }
+        .projectSec .mainProject .imgSec img {
+          width: 100%;
+          height: 270px; }
+        .projectSec .mainProject .imgSec .textSec {
+          width: 100%;
+          height: 270px;
+          top: 0;
+          left: 0;
+          display: none;
+          position: absolute;
+          transition: 0.4s all linear; }
+        .projectSec .mainProject .imgSec:hover .textSec {
+          display: inline-block;
+          top: 0px;
+          transition: 0.4s all linear; }
+        .projectSec .mainProject .imgSec:hover {
+          transform: scale(1.1); }
+    .projectSec .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(17, 17, 17, 0.589);
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      text-align: center;
+      z-index: 1000; }
+      .projectSec .sidenav video {
+        width: 80%;
+        height: 80%; }
+    .projectSec .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s; }
+    .projectSec .sidenav a:hover {
+      color: #f1f1f1; }
+    .projectSec .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px; }
+
+  .contactME {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    height: 100%; }
+    .contactME .video2 {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      pointer-events: none; }
+    .contactME .rasmPart img {
+      margin-top: -100px;
+      width: 100%;
+      height: 50%; }
+    .contactME .carusel {
+      text-align: center;
+      margin-top: -100px; }
+      .contactME .carusel h3 {
+        font-size: 35px;
+        font-weight: 400; }
+      .contactME .carusel .text1 i {
+        font-size: 150px;
+        background: #121FCF;
+        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .contactME .carusel .text1 a {
+        background: #121FCF;
+        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+        font-weight: 700; }
+      .contactME .carusel .text3 i {
+        font-size: 150px;
+        color: #0cd17f; }
+      .contactME .carusel .text3 a {
+        color: #0cd17f;
+        font-size: 35px;
+        font-weight: 700; }
+      .contactME .carusel .text2 i {
+        font-size: 150px;
+        color: #121FCF; }
+      .contactME .carusel .text2 a {
+        color: #121FCF;
+        font-size: 35px;
+        font-weight: 700; } }
+@media (max-width: 767px) and (min-width: 601px) {
+  header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; }
+    header .video {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      pointer-events: none; }
+    header .navbar {
+      padding-left: 0; }
+      header .navbar .navbar-brand {
+        color: #d0d9bc; }
+      header .navbar .navbar-nav .nav-item a {
+        color: #d0d9bc;
+        padding: 0 35px;
+        font-weight: 400; }
+    header .wrapper {
+      display: inline-flex;
+      color: #d0d9bc; }
+      header .wrapper .static-txt {
+        font-size: 20px;
+        font-weight: 500; }
+      header .wrapper .dynamic-txt {
+        margin-left: -25px; }
+        header .wrapper .dynamic-txt a {
+          font-size: 20px;
+          font-weight: 500;
+          color: #d0d9bc; }
+    header .aboutMe {
+      color: #d0d9bc;
+      font-size: 18px;
+      text-align: justify; }
+      header .aboutMe a {
+        color: #d0d9bc !important; }
+      header .aboutMe .btn {
+        color: #d0d9bc;
+        background-color: rgba(208, 217, 188, 0.089); }
+    header .rasmPart {
+      display: none; }
+      header .rasmPart img {
+        margin: -60px 0 0 0; }
+
+  .projectSec {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    padding-bottom: 45px;
+    height: 100%; }
+    .projectSec h1 {
+      font-weight: bold;
+      z-index: 5; }
+    .projectSec .video1 {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      pointer-events: none; }
+    .projectSec .mainProject {
+      margin-top: 55px;
+      width: 100%;
+      height: 100%; }
+      .projectSec .mainProject .imgSec {
+        height: 270px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        transition: 0.5s all linear; }
+        .projectSec .mainProject .imgSec img {
+          width: 100%;
+          height: 270px; }
+        .projectSec .mainProject .imgSec .textSec {
+          width: 100%;
+          height: 270px;
+          top: 0;
+          left: 0;
+          display: none;
+          position: absolute;
+          transition: 0.4s all linear; }
+        .projectSec .mainProject .imgSec:hover .textSec {
+          display: inline-block;
+          top: 0px;
+          transition: 0.4s all linear; }
+        .projectSec .mainProject .imgSec:hover {
+          transform: scale(1.1); }
+    .projectSec .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(17, 17, 17, 0.589);
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      text-align: center;
+      z-index: 1000; }
+      .projectSec .sidenav video {
+        width: 80%;
+        height: 80%; }
+    .projectSec .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s; }
+    .projectSec .sidenav a:hover {
+      color: #f1f1f1; }
+    .projectSec .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px; }
+
+  .contactME {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    height: 100%; }
+    .contactME .video2 {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      pointer-events: none; }
+    .contactME .rasmPart img {
+      margin-top: -100px;
+      width: 100%;
+      height: 50%; }
+    .contactME .carusel {
+      text-align: center;
+      margin-top: -100px; }
+      .contactME .carusel h3 {
+        font-size: 35px;
+        font-weight: 400; }
+      .contactME .carusel .text1 i {
+        font-size: 150px;
+        background: #121FCF;
+        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .contactME .carusel .text1 a {
+        background: #121FCF;
+        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+        font-weight: 700; }
+      .contactME .carusel .text3 i {
+        font-size: 150px;
+        color: #0cd17f; }
+      .contactME .carusel .text3 a {
+        color: #0cd17f;
+        font-size: 35px;
+        font-weight: 700; }
+      .contactME .carusel .text2 i {
+        font-size: 150px;
+        color: #121FCF; }
+      .contactME .carusel .text2 a {
+        color: #121FCF;
+        font-size: 35px;
+        font-weight: 700; } }
+@media (max-width: 992px) and (min-width: 768px) {
+  header {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; }
+    header .video {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      pointer-events: none; }
+    header .navbar {
+      padding-left: 0; }
+      header .navbar .navbar-brand {
+        color: #d0d9bc; }
+      header .navbar .navbar-nav .nav-item a {
+        color: #d0d9bc;
+        padding: 0 35px;
+        font-weight: 400; }
+    header .wrapper {
+      margin: 130px 0 0 0;
+      display: inline-flex;
+      color: #d0d9bc; }
+      header .wrapper .static-txt {
+        font-size: 21px;
+        font-weight: 500; }
+      header .wrapper .dynamic-txt {
+        margin-left: -25px; }
+        header .wrapper .dynamic-txt a {
+          font-size: 21px;
+          font-weight: 500;
+          color: #d0d9bc; }
+    header .aboutMe {
+      color: #d0d9bc;
+      font-size: 20px;
+      text-align: justify; }
+      header .aboutMe a {
+        color: #d0d9bc !important; }
+      header .aboutMe .btn {
+        color: #d0d9bc;
+        background-color: rgba(208, 217, 188, 0.089); }
+    header .rasmPart img {
+      margin: 60px 0 0 0; }
+
+  .contactME {
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    height: 100vh; }
+    .contactME .video2 {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100vh;
+      pointer-events: none; }
+    .contactME .rasmPart {
+      margin: 40px 0 0 -112px; }
+    .contactME .carusel {
+      margin-top: 160px;
+      text-align: center; }
+      .contactME .carusel h3 {
+        font-size: 40px;
+        font-weight: 400; }
+      .contactME .carusel i {
+        margin: 40px 0 0 0; }
+      .contactME .carusel .text1 i {
+        font-size: 255px;
+        background: #121FCF;
+        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; }
+      .contactME .carusel .text1 a {
+        background: #121FCF;
+        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
+        font-weight: 700; }
+      .contactME .carusel .text3 i {
+        font-size: 255px;
+        color: #0cd17f; }
+      .contactME .carusel .text3 a {
+        color: #0cd17f;
+        font-size: 40px;
+        font-weight: 700; }
+      .contactME .carusel .text2 i {
+        font-size: 255px;
+        color: #121FCF; }
+      .contactME .carusel .text2 a {
+        color: #121FCF;
+        font-size: 40px;
+        font-weight: 700; } }
+
+/*# sourceMappingURL=main.css.map */

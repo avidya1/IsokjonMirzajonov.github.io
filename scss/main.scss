@@ -1,0 +1,1069 @@
+*{
+  box-sizing: border-box;
+}
+
+html{
+  height: 100%;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+header{
+  // background-color: black;
+  // opacity: 0.6;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+.video{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  height: 100%;
+  pointer-events: none;  
+}
+
+
+  .navbar{
+    padding-left: 0;
+  .navbar-brand{
+    color: rgba(208, 217, 188, 1);
+  }
+
+  .navbar-nav{
+    .nav-item{
+      a{
+        color: rgba(208, 217, 188, 1);
+        padding: 0 35px;
+        font-weight: 400;
+      }
+    }
+  }
+  }
+  .wrapper{
+    margin: 130px 0 0 0;
+    display: inline-flex;
+    color: rgba(208, 217, 188, 1);
+  
+    .static-txt{
+      // color: white;
+      font-size: 40px;
+      font-weight: 500;
+  
+    }
+  
+    .dynamic-txt{
+      margin-left: -25px;
+      a{
+        font-size: 40px;
+        font-weight: 500;
+        color: rgba(208, 217, 188, 1);
+      }
+    }
+  }
+  
+  .aboutMe{
+    color: rgba(208, 217, 188, 1);
+    font-size: 22px;
+    text-align: justify;
+    a{
+      color: rgba(208, 217, 188, 1)!important;
+    }
+    .btn{
+      color: rgba(208, 217, 188, 1);
+      background-color: rgba(208, 217, 188, 0.089);
+    }
+  }
+  
+  
+  .rasmPart{
+    img{
+      margin: 60px 0 0 0;
+      
+    }
+  }
+  
+}
+
+
+.contactME{
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  // padding-bottom: 45px;
+  height: 100vh;
+  
+  .video2{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100vh;
+    pointer-events: none;  
+  }
+.rasmPart{
+  margin-top: 40px;
+  margin-bottom: 90px;
+}
+
+.carusel{
+  margin-top: 160px;
+  text-align: center;
+  h3{
+    font-size: 40px;
+    font-weight: 400;
+  }
+
+  i{
+    margin: 40px 0 0 0;
+  }
+  .text1{
+    i{
+      font-size: 255px;
+      background: #121FCF;
+      background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+   
+
+    a{
+      background: #121FCF;
+      background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+
+  .text3{
+    i{
+    font-size: 255px;
+    color: rgb(12, 209, 127);
+    }
+   
+    a{
+      color: rgb(12, 209, 127);
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+  .text2{
+    i{
+      font-size: 255px;
+     color: #121FCF;
+     
+    }
+   
+    a{
+      color: #121FCF;
+     
+      font-size: 40px;
+      font-weight: 700;
+    }
+  }
+ 
+
+
+
+}
+
+  
+}
+
+// projectPart
+.projectSec{
+  h1{
+    font-weight: bold;
+    z-index: 5;
+  }
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  padding-bottom: 45px;
+  height: 100%;
+  .video1{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    pointer-events: none;  
+  }
+  .mainProject{
+    margin-top: 55px;
+    width: 100%;
+    height: 100%;
+    .imgSec{
+    
+      height: 270px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      position: relative;
+      transition: 0.5s all linear;
+  
+      img{
+        width: 100%;
+        height: 270px;
+      
+      }
+      .textSec{
+        width: 100%;
+        height: 270px;
+        top: 0;
+        left: 0;
+        display: none;
+        position: absolute;
+        transition: 0.4s all linear;
+      }
+      &:hover .textSec{
+        display: inline-block;
+        // opacity: 0.9;
+        top: 0px;
+        transition: 0.4s all linear;
+
+      }
+      &:hover{
+        transform: scale(1.1);
+      }
+    } 
+  }
+}
+
+
+
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(17, 17, 17, 0.589);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align:center;
+  z-index: 1000;
+  video{
+    height: 80%;
+  }
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+
+  // header
+  header{
+    // background-color: black;
+    // opacity: 0.6;
+    width: 100%;
+    height: 100vh;
+    // overflow: hidden;
+  .video{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    pointer-events: none;  
+  }
+  
+  
+    .navbar{
+      padding-left: 0;
+    .navbar-brand{
+      color: rgba(208, 217, 188, 1);
+    }
+  
+    .navbar-nav{
+      .nav-item{
+        a{
+          color: rgba(208, 217, 188, 1);
+          padding: 0 35px;
+          font-weight: 400;
+        }
+      }
+    }
+    }
+    .wrapper{
+      // margin: 130px 0 0 0;
+      display: inline-flex;
+      color: rgba(208, 217, 188, 1);
+    
+      .static-txt{
+        // color: white;
+        font-size: 18px;
+        font-weight: 500;
+    
+      }
+    
+      .dynamic-txt{
+        margin-left: -25px;
+        a{
+          font-size: 18px;
+          font-weight: 500;
+          color: rgba(208, 217, 188, 1);
+        }
+      }
+    }
+    
+    .aboutMe{
+      color: rgba(208, 217, 188, 1);
+      font-size: 16px;
+      text-align: justify;
+      a{
+        color: rgba(208, 217, 188, 1)!important;
+      }
+      .btn{
+        color: rgba(208, 217, 188, 1);
+        background-color: rgba(208, 217, 188, 0.089);
+      }
+    }
+    
+    
+    .rasmPart{
+      display: none;
+      img{
+        width: 100%;
+        height: 100%;
+        margin: 0 0 80px 0;
+        
+      }
+    }
+    
+  }
+
+  // section1
+
+  .projectSec{
+    h1{
+      font-weight: bold;
+      z-index: 5;
+    }
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    padding-bottom: 45px;
+    height: 100%;
+    .video1{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      pointer-events: none;  
+    }
+    .mainProject{
+      margin-top: 55px;
+      width: 100%;
+      height: 100%;
+      .imgSec{
+      
+        height: 270px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        transition: 0.5s all linear;
+    
+        img{
+          width: 100%;
+          height: 270px;
+        
+        }
+        .textSec{
+          width: 100%;
+          height: 270px;
+          top: 0;
+          left: 0;
+          display: none;
+          position: absolute;
+          transition: 0.4s all linear;
+        }
+        &:hover .textSec{
+          display: inline-block;
+          // opacity: 0.9;
+          top: 0px;
+          transition: 0.4s all linear;
+  
+        }
+        &:hover{
+          transform: scale(1.1);
+        }
+      } 
+    }
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(17, 17, 17, 0.589);
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      text-align:center;
+      z-index: 1000;
+      video{
+        width: 80%;
+        height: 80%;
+      }
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    
+    }
+    
+    .sidenav a:hover{
+      color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+  }
+
+
+  
+
+  .contactME{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+   
+    height: 100%;
+    
+    
+    .video2{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      pointer-events: none;  
+    }
+  .rasmPart{
+    img{
+      margin-top: -100px;
+      width: 100%;
+      height: 50%;
+    }
+    // margin-top: 40px;
+    // margin-bottom: 90px;
+  }
+  
+  .carusel{
+    // margin-top: 160px;
+    text-align: center;
+    margin-top: -100px;
+  
+    h3{
+      font-size: 35px;
+      font-weight: 400;
+    }
+  
+    i{
+      // margin-top: -80px;
+     
+    }
+    .text1{
+      i{
+        font-size: 150px;
+        background: #121FCF;
+        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+     
+  
+      a{
+        background: #121FCF;
+        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+        font-weight: 700;
+      }
+    }
+  
+    .text3{
+      i{
+      font-size: 150px;
+      color: rgb(12, 209, 127);
+      }
+     
+      a{
+        color: rgb(12, 209, 127);
+        font-size: 35px;
+        font-weight: 700;
+      }
+    }
+    .text2{
+      i{
+        font-size: 150px;
+       color: #121FCF;
+       
+      }
+     
+      a{
+        color: #121FCF;
+       
+        font-size: 35px;
+        font-weight: 700;
+      }
+    }
+   
+  
+  
+  
+  }
+  
+    
+  }
+}
+
+
+
+@media (max-width: 767px) and (min-width: 601px){
+
+  header{
+    // background-color: black;
+    // opacity: 0.6;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  .video{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    pointer-events: none;  
+  }
+  
+  
+    .navbar{
+      padding-left: 0;
+    .navbar-brand{
+      color: rgba(208, 217, 188, 1);
+    }
+  
+    .navbar-nav{
+      .nav-item{
+        a{
+          color: rgba(208, 217, 188, 1);
+          padding: 0 35px;
+          font-weight: 400;
+        }
+      }
+    }
+    }
+    .wrapper{
+      // margin: 130px 0 0 0;
+      display: inline-flex;
+      color: rgba(208, 217, 188, 1);
+    
+      .static-txt{
+        // color: white;
+        font-size: 20px;
+        font-weight: 500;
+    
+      }
+    
+      .dynamic-txt{
+        margin-left: -25px;
+        a{
+          font-size: 20px;
+          font-weight: 500;
+          color: rgba(208, 217, 188, 1);
+        }
+      }
+    }
+    
+    .aboutMe{
+      color: rgba(208, 217, 188, 1);
+      font-size: 18px;
+      text-align: justify;
+      a{
+        color: rgba(208, 217, 188, 1)!important;
+      }
+      .btn{
+        color: rgba(208, 217, 188, 1);
+        background-color: rgba(208, 217, 188, 0.089);
+      }
+    }
+    
+    
+    .rasmPart{
+      display: none;
+      img{
+        margin: -60px 0 0 0;
+        
+      }
+    }
+    
+  }
+
+  .projectSec{
+    h1{
+      font-weight: bold;
+      z-index: 5;
+    }
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    padding-bottom: 45px;
+    height: 100%;
+    .video1{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      pointer-events: none;  
+    }
+    .mainProject{
+      margin-top: 55px;
+      width: 100%;
+      height: 100%;
+      .imgSec{
+      
+        height: 270px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: relative;
+        transition: 0.5s all linear;
+    
+        img{
+          width: 100%;
+          height: 270px;
+        
+        }
+        .textSec{
+          width: 100%;
+          height: 270px;
+          top: 0;
+          left: 0;
+          display: none;
+          position: absolute;
+          transition: 0.4s all linear;
+        }
+        &:hover .textSec{
+          display: inline-block;
+          // opacity: 0.9;
+          top: 0px;
+          transition: 0.4s all linear;
+  
+        }
+        &:hover{
+          transform: scale(1.1);
+        }
+      } 
+    }
+    .sidenav {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: rgba(17, 17, 17, 0.589);
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      text-align:center;
+      z-index: 1000;
+      video{
+        width: 80%;
+        height: 80%;
+      }
+    }
+    
+    .sidenav a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 25px;
+      color: #818181;
+      display: block;
+      transition: 0.3s;
+    
+    }
+    
+    .sidenav a:hover{
+      color: #f1f1f1;
+    }
+    
+    .sidenav .closebtn {
+      position: absolute;
+      top: 0;
+      right: 25px;
+      font-size: 36px;
+      margin-left: 50px;
+    }
+    
+  }
+
+
+
+  .contactME{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+   
+    height: 100%;
+    
+    
+    .video2{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100%;
+      pointer-events: none;  
+    }
+  .rasmPart{
+    img{
+      margin-top: -100px;
+      width: 100%;
+      height: 50%;
+    }
+    // margin-top: 40px;
+    // margin-bottom: 90px;
+  }
+  
+  .carusel{
+    // margin-top: 160px;
+    text-align: center;
+    margin-top: -100px;
+  
+    h3{
+      font-size: 35px;
+      font-weight: 400;
+    }
+  
+    i{
+      // margin-top: -80px;
+     
+    }
+    .text1{
+      i{
+        font-size: 150px;
+        background: #121FCF;
+        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+     
+  
+      a{
+        background: #121FCF;
+        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 35px;
+        font-weight: 700;
+      }
+    }
+  
+    .text3{
+      i{
+      font-size: 150px;
+      color: rgb(12, 209, 127);
+      }
+     
+      a{
+        color: rgb(12, 209, 127);
+        font-size: 35px;
+        font-weight: 700;
+      }
+    }
+    .text2{
+      i{
+        font-size: 150px;
+       color: #121FCF;
+       
+      }
+     
+      a{
+        color: #121FCF;
+       
+        font-size: 35px;
+        font-weight: 700;
+      }
+    }
+   
+  
+  
+  
+  }
+  
+    
+  }
+  
+
+
+}
+
+
+
+
+@media (max-width: 992px) and (min-width: 768px){
+
+
+  header{
+    // background-color: black;
+    // opacity: 0.6;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+  .video{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    height: 100%;
+    pointer-events: none;  
+  }
+  
+  
+    .navbar{
+      padding-left: 0;
+    .navbar-brand{
+      color: rgba(208, 217, 188, 1);
+    }
+  
+    .navbar-nav{
+      .nav-item{
+        a{
+          color: rgba(208, 217, 188, 1);
+          padding: 0 35px;
+          font-weight: 400;
+        }
+      }
+    }
+    }
+    .wrapper{
+      margin: 130px 0 0 0;
+      display: inline-flex;
+      color: rgba(208, 217, 188, 1);
+    
+      .static-txt{
+        // color: white;
+        font-size: 21px;
+        font-weight: 500;
+    
+      }
+    
+      .dynamic-txt{
+        margin-left: -25px;
+        a{
+          font-size: 21px;
+          font-weight: 500;
+          color: rgba(208, 217, 188, 1);
+        }
+      }
+    }
+    
+    .aboutMe{
+      color: rgba(208, 217, 188, 1);
+      font-size: 20px;
+      text-align: justify;
+      a{
+        color: rgba(208, 217, 188, 1)!important;
+      }
+      .btn{
+        color: rgba(208, 217, 188, 1);
+        background-color: rgba(208, 217, 188, 0.089);
+      }
+    }
+    
+    
+    .rasmPart{
+      img{
+        margin: 60px 0 0 0;
+        
+      }
+    }
+    
+  }
+
+
+
+
+  .contactME{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
+    height: 100vh;
+    
+    .video2{
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      object-fit: cover;
+      height: 100vh;
+      pointer-events: none;  
+    }
+  .rasmPart{
+    // margin-top: 40px;
+    // margin-bottom: 90px;
+    margin: 40px 0 0 -112px;
+  }
+  
+  .carusel{
+    margin-top: 160px;
+    text-align: center;
+    h3{
+      font-size: 40px;
+      font-weight: 400;
+    }
+  
+    i{
+      margin: 40px 0 0 0;
+    }
+    .text1{
+      i{
+        font-size: 255px;
+        background: #121FCF;
+        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+     
+  
+      a{
+        background: #121FCF;
+        background: -webkit-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: -moz-linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+  
+    .text3{
+      i{
+      font-size: 255px;
+      color: rgb(12, 209, 127);
+      }
+     
+      a{
+        color: rgb(12, 209, 127);
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+    .text2{
+      i{
+        font-size: 255px;
+       color: #121FCF;
+       
+      }
+     
+      a{
+        color: #121FCF;
+       
+        font-size: 40px;
+        font-weight: 700;
+      }
+    }
+   
+  
+  
+  
+  }
+  
+    
+  }
+
+
+}
+
+
+
+
